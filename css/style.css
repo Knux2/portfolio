@@ -44,6 +44,26 @@ nav {
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
+@media screen and (max-width: 950px) {
+    nav li {
+        font-size: 1.4rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav {
+        padding: 9px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 550px) {
     nav li {
         font-size: 0.8rem;
@@ -57,5 +77,9 @@ nav {
 
     .hero {
         height: 300px;
+    }
+
+    .title {
+        font-size: 0.8rem;
     }
 }
