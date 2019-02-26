@@ -4,7 +4,7 @@
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FAA300;
 }
 
 a:hover {
@@ -14,12 +14,13 @@ a:hover {
 
 nav li {
     display: inline;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     font-size: 2rem;
+    font-family: Superclarendon, sans-serif;
 }
 
-.search {
+nav {
     overflow: auto;
     padding: 10px;
     background-color: transparent;
@@ -34,11 +35,22 @@ nav li {
     background-size: cover;
 }
 
+.title {
+    text-align: center;
+    color: #FAA300;
+    font-size: 2rem;
+    font-family: Superclarendon, sans-serif;
+}
+
 @media screen and (max-width: 550px) {
     nav li {
-        font-size: 1.3rem;
-        padding-left: 8px;
-        padding-right: 8px;
+        font-size: 0.8rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav {
+        padding: 8px;
     }
 
     .hero {
