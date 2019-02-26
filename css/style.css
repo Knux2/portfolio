@@ -1,5 +1,5 @@
 * {
-    box-sizing: border box;
+    box-sizing: border-box;
 }
 
 a {
@@ -42,6 +42,18 @@ nav {
     font-size: 2rem;
     font-family: Superclarendon, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.container {
+    overflow: auto;
+    padding: 0;
+}
+
+.projectBox {
+    float: left;
+    width: 33.3%;
+    height: 250px;
+    border: 1px solid black;
 }
 
 @media screen and (max-width: 950px) {
