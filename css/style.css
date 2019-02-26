@@ -74,6 +74,10 @@ nav {
     .title {
         font-size: 1.4rem;
     }
+
+    .projectBox {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -93,5 +97,9 @@ nav {
 
     .title {
         font-size: 0.8rem;
+    }
+
+    .projectBox {
+        width: 100%;
     }
 }
