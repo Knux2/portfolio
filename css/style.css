@@ -147,6 +147,14 @@ nav {
         font-size: 1.4rem;
     }
 
+    .heading h1 {
+        font-size: 6rem;
+    }
+
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+
     .portfolioTitle {
         font-size: 6rem;
         margin-bottom: -50px;
@@ -178,6 +186,14 @@ nav {
 
     .title {
         font-size: 0.8rem;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
     }
 
     .portfolioTitle {
