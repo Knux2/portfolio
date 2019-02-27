@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FAA300;
+}
+
+a:hover {
+    color: #D12411;
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline;
+    padding: 0 35px;
+    font-size: 2rem;
+    font-family: Superclarendon, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+.hero {
+    height: 500px;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    color: #EC7505;
+    font-size: 2rem;
+    font-family: Superclarendon, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.portfolioTitle {
+    height: 170px;
+    margin: 0 auto;
+    color: #CC3F0C;
+    text-align: center;
+    font-family: SignPainter, sans-serif;
+    font-size: 8rem;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.projectBox {
+    float: left;
+    width: 33.3%;
+    height: 250px;
+}
+
+.projectInfo {
+    text-align: center;
+    opacity: 0;
+    color: #D12411;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+}
+
+.projectInfo:hover {
+    opacity: 100;
+}
+
+.project1 {
+    background-image: url(../img/project1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 390px;
+}
+
+.project2 {
+    background-image: url(../img/project2.png);
+    background-position: center;
+    background-size: 490px;
+}
+
+.project3 {
+    background-image: url(../img/comingSoon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project4 {
+    background-image: url(../img/comingSoon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project5 {
+    background-image: url(../img/comingSoon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project6 {
+    background-image: url(../img/comingSoon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 950px) {
+    nav li {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+
+    nav {
+        padding: 9px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .portfolioTitle {
+        font-size: 6rem;
+        margin-bottom: -50px;
+    }
+
+    .projectBox {
+        width: 50%;
+    }
+
+    .projectInfo {
+        font-size: 0.9rem
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav li {
+        font-size: 0.8rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .portfolioTitle {
+        font-size: 5rem;
+        margin-bottom: -60px;
+    }
+
+    .projectBox {
+        width: 100%;
+    }
+}
