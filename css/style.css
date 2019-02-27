@@ -126,6 +126,11 @@ nav {
         font-size: 1.4rem;
     }
 
+    .portfolioTitle {
+        font-size: 6rem;
+        margin-bottom: -50px;
+    }
+
     .projectBox {
         width: 50%;
     }
@@ -152,6 +157,11 @@ nav {
 
     .title {
         font-size: 0.8rem;
+    }
+
+    .portfolioTitle {
+        font-size: 5rem;
+        margin-bottom: -60px;
     }
 
     .projectBox {
