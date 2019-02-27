@@ -55,7 +55,11 @@ nav {
 }
 
 .heading h2 {
+    margin: 0 auto;
     background-color: #FAA300;
+    font-family: Superclarendon, sans-serif;
+    letter-spacing: 0.1rem;
+    padding: 18px;
 }
 
 .portfolioTitle {
