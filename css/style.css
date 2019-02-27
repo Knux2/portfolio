@@ -41,6 +41,20 @@ nav {
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
+.heading {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 8rem;
+    color: #CC3F0C;
+    font-family: SignPainter, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+
+
 .portfolioTitle {
     height: 170px;
     margin: 0 auto;
