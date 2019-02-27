@@ -138,6 +138,10 @@ nav {
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
+.contactSymbols {
+    text-align: center;
+}
+
 .icon {
     height: 50px;
     width: 50px;
