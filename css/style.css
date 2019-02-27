@@ -44,7 +44,6 @@ nav {
 .portfolioTitle {
     height: 170px;
     margin: 0 auto;
-    background-color: #6495ED;
     color: #CC3F0C;
     text-align: center;
     font-family: SignPainter, sans-serif;
@@ -80,41 +79,31 @@ nav {
 }
 
 .project2 {
-    margin: 0 auto;
     background-image: url(../img/project2.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: 490px;
 }
 
 .project3 {
-    margin: 0 auto;
     background-image: url(../img/comingSoon.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .project4 {
-    margin: 0 auto;
     background-image: url(../img/comingSoon.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .project5 {
-    margin: 0 auto;
     background-image: url(../img/comingSoon.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .project6 {
-    margin: 0 auto;
     background-image: url(../img/comingSoon.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
