@@ -129,6 +129,15 @@ nav {
     background-size: cover;
 }
 
+.contactInfo {
+    margin: 0 auto;
+    font-size: 5rem;
+    color: #CC3F0C;
+    text-align: center;
+    font-family: SignPainter, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
 @media screen and (max-width: 950px) {
     nav li {
         font-size: 1.4rem;
