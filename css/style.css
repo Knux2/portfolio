@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FAA300;
+}
+
+a:hover {
+    color: #D12411;
+    text-decoration: underline;
+}
+
+.font1 {
+    font-family: Superclarendon, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.font2 {
+    font-family: SignPainter, sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.font3 {
+    font-family: "Lato", sans-serif;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+nav li {
+    display: inline;
+    padding: 0 35px;
+    font-size: 2rem;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+.hero {
+    height: 500px;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    color: #EC7505;
+    font-size: 2rem;
+}
+
+.heading {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.heading h1 {
+    margin: 0 auto;
+    font-size: 8rem;
+    color: #CC3F0C;
+}
+
+.heading h2 {
+    margin: 0 auto;
+    background-color: #FAA300;
+    text-shadow: none;
+    letter-spacing: 0.1rem;
+    padding: 18px;
+}
+
+.portfolioTitle {
+    height: 170px;
+    margin: 0 auto;
+    color: #CC3F0C;
+    text-align: center;
+    font-size: 8rem;
+}
+
+.projectBox {
+    float: left;
+    width: 33.3%;
+    height: 250px;
+}
+
+.projectInfo {
+    text-align: center;
+    opacity: 0;
+    color: #D12411;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+}
+
+.projectInfo:hover {
+    opacity: 100;
+}
+
+.project1 {
+    background-image: url("../img/project1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 390px;
+}
+
+.project2 {
+    background-image: url("../img/project2.png");
+    background-position: center;
+    background-size: 490px;
+}
+
+.project3 {
+    background-image: url("../img/comingSoon.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.project4 {
+    background-image: url("../img/comingSoon.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.project5 {
+    background-image: url("../img/comingSoon.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.project6 {
+    background-image: url("../img/comingSoon.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.contactInfo {
+    font-size: 4.3rem;
+    color: #CC3F0C;
+    text-align: center;
+}
+
+.contactTitle {
+    margin: 0 auto;
+}
+
+.contactSymbols {
+    text-align: center;
+    background-color: #577399;
+}
+
+.contactSymbols ul {
+    margin: 0 auto;
+}
+
+.contactSymbols li {
+    display: inline-block;
+}
+
+.icon {
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+}
+
+@media screen and (max-width: 950px) {
+    nav li {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+
+    nav {
+        padding: 9px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .heading h1 {
+        font-size: 6rem;
+    }
+
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .portfolioTitle {
+        font-size: 6rem;
+        margin-bottom: -50px;
+    }
+
+    .projectBox {
+        width: 50%;
+    }
+
+    .projectInfo {
+        font-size: 0.9rem
+    }
+
+    .contactInfo {
+        font-size: 3.6rem;
+    }
+
+    .contactSymbols {
+        height: 80px;
+    }
+
+    .icon {
+        margin: 12px;
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav li {
+        font-size: 0.8rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .portfolioTitle {
+        font-size: 5rem;
+        margin-bottom: -60px;
+    }
+
+    .projectBox {
+        width: 100%;
+    }
+
+    .contactInfo {
+        font-size: 2.6rem;
+    }
+
+    .contactSymbols {
+        height: 65px;
+    }
+
+    .icon {
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+    }
+}
