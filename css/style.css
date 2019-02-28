@@ -144,16 +144,17 @@ nav {
 .contactSymbols {
     text-align: center;
     height: 250px;
+    width: 100%;
     background-color: #577399;
+}
+
+.contactSymbols ul {
+    list-style: none;
 }
 
 .icon {
     height: 70px;
     width: 70px;
-}
-
-.contactSymbols a {
-    letter-spacing: 5px;
 }
 
 @media screen and (max-width: 950px) {
