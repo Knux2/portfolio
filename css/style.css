@@ -152,6 +152,10 @@ nav {
     list-style: none;
 }
 
+.contactSymbols li {
+    display: inline-block;
+}
+
 .icon {
     height: 70px;
     width: 70px;
