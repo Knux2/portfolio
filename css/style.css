@@ -131,7 +131,7 @@ nav {
 
 .contactInfo {
     margin: 0 auto;
-    font-size: 5rem;
+    font-size: 4.3rem;
     color: #CC3F0C;
     text-align: center;
     font-family: SignPainter, sans-serif;
@@ -185,6 +185,10 @@ nav {
     .projectInfo {
         font-size: 0.9rem
     }
+
+    .contactInfo {
+        font-size: 3.6rem;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -221,5 +225,9 @@ nav {
 
     .projectBox {
         width: 100%;
+    }
+
+    .contactInfo {
+        font-size: 2.6rem;
     }
 }
