@@ -143,8 +143,7 @@ nav {
 
 .contactSymbols {
     text-align: center;
-    height: 250px;
-    width: 100%;
+    height: 100px;
     background-color: #577399;
 }
 
@@ -157,6 +156,7 @@ nav {
 }
 
 .icon {
+    margin: 15px;
     height: 70px;
     width: 70px;
 }
@@ -203,6 +203,16 @@ nav {
     .contactInfo {
         font-size: 3.6rem;
     }
+
+    .contactSymbols {
+        height: 80px;
+    }
+
+    .icon {
+        margin: 12px;
+        height: 55px;
+        width: 55px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -243,5 +253,15 @@ nav {
 
     .contactInfo {
         font-size: 2.6rem;
+    }
+
+    .contactSymbols {
+        height: 65px;
+    }
+
+    .icon {
+        margin: 10px;
+        height: 40px;
+        width: 40px;
     }
 }
