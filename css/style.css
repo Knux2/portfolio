@@ -130,7 +130,6 @@ nav {
 }
 
 .contactInfo {
-    margin: 0 auto;
     font-size: 4.3rem;
     color: #CC3F0C;
     text-align: center;
@@ -138,8 +137,13 @@ nav {
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
+.contactTitle {
+    margin: 0 auto;
+}
+
 .contactSymbols {
     text-align: center;
+    background-color:;
 }
 
 .icon {
