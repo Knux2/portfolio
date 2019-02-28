@@ -143,15 +143,18 @@ nav {
 
 .contactSymbols {
     text-align: center;
-    height: 100px;
     background-color: #577399;
 }
 
 .contactSymbols ul {
-    list-style: none;
+    margin: 0 auto;
 }
 
 .contactSymbols li {
+    display: inline-block;
+}
+
+.contactSymbols a {
     display: inline-block;
 }
 
