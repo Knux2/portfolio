@@ -34,10 +34,7 @@ $paragraph = getParagraph($viewAboutMe);
 
     <div class="heading" id="aboutMe">
         <h1 class="font2">About Me</h1>
-        <h2 class="font1">After working as a manager in the retail industry for 15 years I decided to change careers and become a web developer.
-            I am currently studying full stack development at the Mayden Academy over a 16 week course to learn about the skills and tools needed.</h2>
-        <h2 class="font1">In my spare time I enjoy online gaming. I particularly enjoy the competitive environment, trying to outfox and outplay opposing players
-            as well as playing together with a team strategising and working towards accomplishing a goal.</h2>
+        <?php echo $paragraph ?>
     </div>
 
     <div class="portfolio" id="portfolio">
