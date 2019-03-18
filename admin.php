@@ -16,31 +16,35 @@
     <header>
         <h1>Admin Page</h1>
         <h2>Welcome Ben</h2>
-        <h3>About Me</h3>
     </header>
-    <div class="forms">
-        <div class="container">
-            <h4>Add information</h4><form method="post">
-                <textarea rows="4" cols="100" name="add"></textarea>
+    <section class="aboutMe">
+        <h3>About Me</h3>
+        <div>
+            <h4>Add information</h4>
+            <form method="post">
+                <textarea name="add"></textarea>
                 <input type="submit" value="Add">
             </form>
         </div>
-        <div class="container">
+        <div>
             <h4>Edit information</h4>
             <p>Select Paragraph to Edit</p>
+            <form method="post">
                 <select>
                     <option>Paragraph 1</option>
                     <option>Paragraph 2</option>
                     <option>Paragraph 3</option>
                 </select>
+            </form>
             <form method="post">
-                <textarea rows="4" cols="100" name="edit"></textarea>
+                <textarea name="edit"></textarea>
                 <input type="submit" value="Edit">
             </form>
         </div>
-        <div class="container">
+        <div>
             <h4>Delete information</h4>
             <p>Select Paragraph to Delete</p>
+            <form method="post">
                 <select>
                     <option>Paragraph 1</option>
                     <option>Paragraph 2</option>
@@ -49,6 +53,6 @@
                 <input type="submit" value="Delete">
             </form>
         </div>
-    </div>
+    </section>
 </body>
 

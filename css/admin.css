@@ -6,11 +6,16 @@ header {
     text-align: center;
 }
 
-.forms {
+section {
     text-align: center;
 }
 
-.container {
+.aboutMe > div {
     border: 1px solid black;
     padding: 10px;
+}
+
+textarea {
+    width: 50%;
+    height: 80px;
 }
