@@ -19,30 +19,36 @@
         <h3>About Me</h3>
     </header>
     <div class="forms">
-        <h4>Add information</h4><form method="post">
-            <textarea rows="4" cols="100" name="add"></textarea>
-            <input type="submit" value="Add">
-        </form>
-        <h4>Edit information</h4>
-        <p>Select Paragraph to Edit</p>
-            <select>
-                <option>Paragraph 1</option>
-                <option>Paragraph 2</option>
-                <option>Paragraph 3</option>
-            </select>
-        <form method="post">
-            <textarea rows="4" cols="100" name="edit"></textarea>
-            <input type="submit" value="Edit">
-        </form>
-        <h4>Delete information</h4>
-        <p>Select Paragraph to Delete</p>
-            <select>
-                <option>Paragraph 1</option>
-                <option>Paragraph 2</option>
-                <option>Paragraph 3</option>
-            </select>
-            <input type="submit" value="Delete">
-        </form>
+        <div class="container">
+            <h4>Add information</h4><form method="post">
+                <textarea rows="4" cols="100" name="add"></textarea>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="container">
+            <h4>Edit information</h4>
+            <p>Select Paragraph to Edit</p>
+                <select>
+                    <option>Paragraph 1</option>
+                    <option>Paragraph 2</option>
+                    <option>Paragraph 3</option>
+                </select>
+            <form method="post">
+                <textarea rows="4" cols="100" name="edit"></textarea>
+                <input type="submit" value="Edit">
+            </form>
+        </div>
+        <div class="container">
+            <h4>Delete information</h4>
+            <p>Select Paragraph to Delete</p>
+                <select>
+                    <option>Paragraph 1</option>
+                    <option>Paragraph 2</option>
+                    <option>Paragraph 3</option>
+                </select>
+                <input type="submit" value="Delete">
+            </form>
+        </div>
     </div>
 </body>
 
