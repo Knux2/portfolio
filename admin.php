@@ -3,9 +3,9 @@
 require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
 $db = getDbConn();
-
-if (isset($_POST['add'])) {
-    $addParagraph = addParagraph($db, $addParagraph);
+$paragraph = $_POST['add'];
+if(isset($_POST['addParagraph'])){
+    addParagraph($db, $paragraph);
 }
 
 $editDropDown = '<select>
