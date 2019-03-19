@@ -1,5 +1,12 @@
 <?php
 
+require_once 'php/dbConnection.php';
+require_once 'php/addMeFunctions.php';
+$db = getDbConn();
+if(isset($_POST['addParagraph'])){
+    addParagraph($db, $_POST['add']);
+}
+
 $editDropDown = '<select>
                     <option>Paragraph 1</option>
                     <option>Paragraph 2</option>
@@ -30,9 +37,9 @@ $deleteDropDown = '<select>
         <h3>About Me</h3>
         <div>
             <h4>Add information</h4>
-            <form method="post" action="aboutMe.php">
+            <form method="post" action="admin.php">
                 <textarea name="add"></textarea>
-                <input type="submit" value="Add">
+                <input type="submit" value="Add" name="addParagraph">
             </form>
         </div>
         <div>
