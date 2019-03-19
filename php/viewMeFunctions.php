@@ -24,8 +24,8 @@ function viewAboutMe(PDO $db) :array {
 
 function getParagraph(array $viewAboutMe) :string {
     $result = '';
-    foreach($viewAboutMe as $paragraph) {
-        $result .= '<h2 class="font1">' . $paragraph['paragraph'] .'</h2>';
+    foreach($viewAboutMe as $aboutMeParagraph) {
+        $result .= '<h2 class="font1">' . $aboutMeParagraph['paragraph'] .'</h2>';
     }
     return $result;
 }

@@ -4,7 +4,7 @@ require_once 'php/dbConnection.php';
 require_once 'php/viewMeFunctions.php';
 $db = getDbConn();
 $viewAboutMe = viewAboutMe($db);
-$paragraph = getParagraph($viewAboutMe);
+$aboutMeParagraph = getParagraph($viewAboutMe);
 
 ?>
 
@@ -34,7 +34,7 @@ $paragraph = getParagraph($viewAboutMe);
 
     <div class="heading" id="aboutMe">
         <h1 class="font2">About Me</h1>
-        <?php echo $paragraph ?>
+        <?php echo $aboutMeParagraph ?>
     </div>
 
     <div class="portfolio" id="portfolio">
