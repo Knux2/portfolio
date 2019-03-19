@@ -1,5 +1,9 @@
 <?php
 
+require_once 'php/addMeFunctions.php';
+
+$addText = addParagraph($db, $addParagraph);
+
 $editDropDown = '<select>
                     <option>Paragraph 1</option>
                     <option>Paragraph 2</option>
