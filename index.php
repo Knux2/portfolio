@@ -1,7 +1,7 @@
 <?php
 
 require_once 'php/dbConnection.php';
-require_once 'php/functions.php';
+require_once 'php/viewMeFunctions.php';
 $db = getDbConn();
 $viewAboutMe = viewAboutMe($db);
 $paragraph = getParagraph($viewAboutMe);
