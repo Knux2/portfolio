@@ -61,3 +61,7 @@ function editParagraph(PDO $db, string $id, string $paragraph) {
     $query->bindparam(':paragraph', $paragraph);
     $query->execute();
 }
+
+function hiddenInput($editId) {
+    return '<input type="hidden" name="newId" value="'.$editId.'">';
+}

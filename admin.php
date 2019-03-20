@@ -10,11 +10,12 @@ if(isset($_POST['chooseFromDropdown'])){
     $editId = $_POST['editId'];
     $result = getTextById($db, $editId);
     $oldText = $result['paragraph'];
+    $hiddenInput = hiddenInput($editId);
 }
 
 if(isset($_POST['editParagraph'])){
-    $getId = 'editId';
-    $getParagraph = 'edit';
+    $getId = $_POST['newId'];
+    $getParagraph = $_POST['edit'];
     editParagraph($db, $getId, $getParagraph);
 }
 
@@ -65,7 +66,7 @@ $deleteDropDown = '<select>
             </form>
             <form method="post" action="admin.php">
                 <textarea name="edit"><?php echo $oldText; ?></textarea>
-
+                    <?php echo $hiddenInput; ?>
                 <input type="submit" value="Edit" name="editParagraph">
             </form>
         </div>
