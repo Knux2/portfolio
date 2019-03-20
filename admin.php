@@ -4,8 +4,6 @@ require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
 require_once 'php/editMeFunctions.php';
 
-
-
 $db = getDbConn();
 
 if(isset($_POST["chooseFromDropdown"])){
@@ -17,6 +15,7 @@ if(isset($_POST["chooseFromDropdown"])){
 if(isset($_POST['addParagraph'])){
     addParagraph($db, $_POST['add']);
 }
+
 $viewAboutMe = viewAboutMe($db);
 $editDropDown = getParagraph($viewAboutMe);
 

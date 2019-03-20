@@ -30,9 +30,17 @@ function getParagraph(array $viewAboutMe) :string {
     return $result;
 }
 
+/*
+ * Pulls array from database and binds a parameter
+ *
+ * @param $db Connection to database
+ *
+ * @param $id string Links $id to id field in database
+ *
+ * @return retrieves single array from database
+ */
 
-
-function getTextById(PDO $db, $id){
+function getTextById(PDO $db, $id) :array {
     $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `id` = :id;");
     $query->bindparam(':id', $id);
     $query->execute();
