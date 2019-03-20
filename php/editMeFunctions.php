@@ -62,6 +62,14 @@ function editParagraph(PDO $db, string $id, string $paragraph) {
     $query->execute();
 }
 
+/*
+ * Function pulls Id from dropdown list ready to be sent back to database
+ *
+ * @param $editId string Id taken from dropdown list to be connected to paragraph put in text area
+ *
+ * @return string code to be called in HTML and connect to paragraph
+ */
+
 function hiddenInput($editId) {
     return '<input type="hidden" name="newId" value="'.$editId.'">';
 }
