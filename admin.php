@@ -6,14 +6,16 @@ require_once 'php/editMeFunctions.php';
 
 $db = getDbConn();
 
-if(isset($_POST["chooseFromDropdown"])){
+if(isset($_POST['chooseFromDropdown'])){
     $editId = $_POST['editId'];
     $result = getTextById($db, $editId);
     $oldText = $result['paragraph'];
 }
 
 if(isset($_POST['editParagraph'])){
-    editParagraph($db, $_POST['edit']);
+    $getId = 'editId';
+    $getParagraph = 'edit';
+    editParagraph($db, $getId, $getParagraph);
 }
 
 if(isset($_POST['addParagraph'])){

@@ -55,8 +55,9 @@ function getTextById(PDO $db, string $id) :array {
  * @param $editParagraph string Information that will be added into database for previous entry
  */
 
-function editParagraph(PDO $db, string $id) {
-    $query = $db->prepare("UPDATE `about_me` SET `paragraph` WHERE `id` = :id;");
+function editParagraph(PDO $db, string $id, string $paragraph) {
+    $query = $db->prepare("UPDATE `about_me` SET `paragraph` = :paragraph WHERE `id` = :id;");
     $query->bindparam(':id', $id);
+    $query->bindparam(':paragraph', $paragraph);
     $query->execute();
 }
