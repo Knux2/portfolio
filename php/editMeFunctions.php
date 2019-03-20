@@ -40,7 +40,7 @@ function getParagraph(array $viewAboutMe) :string {
  * @return retrieves single array from database
  */
 
-function getTextById(PDO $db, $id) :array {
+function getTextById(PDO $db, string $id) :array {
     $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `id` = :id;");
     $query->bindparam(':id', $id);
     $query->execute();
@@ -55,7 +55,8 @@ function getTextById(PDO $db, $id) :array {
  * @param $editParagraph string Information that will be added into database for previous entry
  */
 
-function editParagraph(PDO $db, string $editParagraph) {
-    $query = $db->prepare("INSERT INTO `about_me` (`paragraph`) VALUES (:addParagraph);");
-    $query->execute(['addParagraph'=>$editParagraph]);
+function editParagraph(PDO $db, string $id) {
+    $query = $db->prepare("UPDATE `about_me` SET `paragraph` WHERE `id` = :id;");
+    $query->bindparam(':id', $id);
+    $query->execute();
 }
