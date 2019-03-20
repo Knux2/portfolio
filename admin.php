@@ -3,7 +3,17 @@
 require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
 require_once 'php/editMeFunctions.php';
+
+
+
 $db = getDbConn();
+
+if(isset($_POST["chooseFromDropdown"])){
+    $editId = $_POST['editId'];
+    $result = getTextById($db, $editId);
+    $oldText = $result['paragraph'];
+}
+
 if(isset($_POST['addParagraph'])){
     addParagraph($db, $_POST['add']);
 }
@@ -42,13 +52,15 @@ $deleteDropDown = '<select>
         <div>
             <h4>Edit information</h4>
             <p>Select Paragraph to Edit</p>
-            <form method="post">
-                <select class="dropDown">
+            <form method="post" action="admin.php">
+                <select class="dropDown" name="editId">
                     <?php echo $editDropDown; ?>
                 </select>
+                <input type="submit" name="chooseFromDropdown" value="Select Text">
             </form>
-            <form method="post" action="aboutMe.php">
-                <textarea name="edit"></textarea>
+            <form method="post" action="admin.php">
+                <textarea name="edit"><?php echo $oldText; ?></textarea>
+
                 <input type="submit" value="Edit">
             </form>
         </div>

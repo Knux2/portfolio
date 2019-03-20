@@ -9,7 +9,7 @@
  */
 
 function viewAboutMe(PDO $db) :array {
-    $query = $db->prepare("SELECT `paragraph` FROM `about_me` WHERE `deleted` = '0';");
+    $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me`;");
     $query->execute();
     return $query->fetchAll();
 }
@@ -25,7 +25,16 @@ function viewAboutMe(PDO $db) :array {
 function getParagraph(array $viewAboutMe) :string {
     $result = '';
     foreach($viewAboutMe as $aboutMeParagraph) {
-        $result .= '<option value=>' . $aboutMeParagraph['paragraph'] .'</option>';
+        $result .= '<option value=' . $aboutMeParagraph['id'] .'>' . $aboutMeParagraph['paragraph'] .'</option>';
     }
     return $result;
+}
+
+
+
+function getTextById(PDO $db, $id){
+    $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `id` = :id;");
+    $query->bindparam(':id', $id);
+    $query->execute();
+    return $query->fetch();
 }
