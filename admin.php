@@ -2,16 +2,13 @@
 
 require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
+require_once 'php/editMeFunctions.php';
 $db = getDbConn();
 if(isset($_POST['addParagraph'])){
     addParagraph($db, $_POST['add']);
 }
-
-$editDropDown = '<select>
-                    <option>Paragraph 1</option>
-                    <option>Paragraph 2</option>
-                    <option>Paragraph 3</option>
-                </select>';
+$viewAboutMe = viewAboutMe($db);
+$editDropDown = getParagraph($viewAboutMe);
 
 $deleteDropDown = '<select>
                     <option>Paragraph 1</option>
@@ -46,7 +43,9 @@ $deleteDropDown = '<select>
             <h4>Edit information</h4>
             <p>Select Paragraph to Edit</p>
             <form method="post">
-                <?php echo $editDropDown; ?>
+                <select>
+                    <?php echo $editDropDown; ?>
+                </select>
             </form>
             <form method="post" action="aboutMe.php">
                 <textarea name="edit"></textarea>

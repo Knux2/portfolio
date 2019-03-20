@@ -25,7 +25,7 @@ function viewAboutMe(PDO $db) :array {
 function getParagraph(array $viewAboutMe) :string {
     $result = '';
     foreach($viewAboutMe as $aboutMeParagraph) {
-        $result .= '<option>' . $aboutMeParagraph['paragraph'] .'</option>';
+        $result .= '<option value=>' . $aboutMeParagraph['paragraph'] .'</option>';
     }
     return $result;
 }
