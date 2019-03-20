@@ -46,3 +46,16 @@ function getTextById(PDO $db, $id) :array {
     $query->execute();
     return $query->fetch();
 }
+
+/*
+ * Function adds edited information to database
+ *
+ * @param $db PDO database connection
+ *
+ * @param $editParagraph string Information that will be added into database for previous entry
+ */
+
+function editParagraph(PDO $db, string $editParagraph) {
+    $query = $db->prepare("INSERT INTO `about_me` (`paragraph`) VALUES (:addParagraph);");
+    $query->execute(['addParagraph'=>$editParagraph]);
+}
