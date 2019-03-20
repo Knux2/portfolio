@@ -43,7 +43,7 @@ $deleteDropDown = '<select>
             <h4>Edit information</h4>
             <p>Select Paragraph to Edit</p>
             <form method="post">
-                <select>
+                <select class="dropDown">
                     <?php echo $editDropDown; ?>
                 </select>
             </form>
