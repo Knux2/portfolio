@@ -23,14 +23,14 @@ class StackTest extends Testcase
         $this->assertEquals($expected, $case);
     }
 
-    public function testGetParagraphMalformed()
+    public function testGetParagraphMalformedInteger()
     {
         $input = 101;
         $this->expectException(TypeError::class);
         getParagraph($input);
     }
 
-    public function testGetParagraphMalformed2()
+    public function testGetParagraphMalformedString()
     {
         $input = 'This is a Paragraph';
         $this->expectException(TypeError::class);
