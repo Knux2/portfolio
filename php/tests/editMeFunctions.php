@@ -66,4 +66,35 @@ class StackTest extends Testcase
         $this->expectException(TypeError::class);
         hiddenInput($input);
     }
+
+    public function testcheckIfEmptySuccess()
+    {
+        $expected = '';
+        $input = false;
+        $case = checkIfEmpty($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testtrimWhiteSpaceSuccess()
+    {
+        $expected = 'string';
+        $input = 'string';
+        $case = trimWhiteSpace($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testtrimWhiteSpaceSuccessWithSpace()
+    {
+        $expected = 'string';
+        $input = '   string';
+        $case = trimWhiteSpace($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testtrimWhiteSpaceMalformedArray()
+    {
+        $input = [];
+        $this->expectException(TypeError::class);
+        hiddenInput($input);
+    }
 }
