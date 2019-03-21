@@ -23,7 +23,7 @@ if(isset($_POST['chooseFromDropdown'])){
     $hiddenInput = hiddenInput($editId);
 }
 
-if(isset($_POST['editParagraph'])){
+if(isset($_POST['editParagraph']) && isset($_POST['newId']) && isset ($_POST['edit'])){
     $getId = $_POST['newId'];
     $getParagraph = $_POST['edit'];
     $trimmedParagraph = trimWhiteSpace($getParagraph);
