@@ -16,7 +16,11 @@ if(isset($_POST['chooseFromDropdown'])){
 if(isset($_POST['editParagraph'])){
     $getId = $_POST['newId'];
     $getParagraph = $_POST['edit'];
-    editParagraph($db, $getId, $getParagraph);
+    $trimmedParagraph = trimWhiteSpace($getParagraph);
+    $checkIfEmpty = checkIfEmpty($trimmedParagraph);
+    if ($checkIfEmpty){
+        editParagraph($db, $getId, $trimmedParagraph);
+    }
 }
 
 if(isset($_POST['addParagraph'])){
