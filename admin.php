@@ -50,7 +50,7 @@ $deleteDropDown = '<select>
         <h3>About Me</h3>
         <div>
             <h4>Add information</h4>
-            <form method="post" action="admin.php">
+            <form method="POST" action="admin.php">
                 <textarea name="add"></textarea>
                 <input type="submit" value="Add" name="addParagraph">
             </form>
@@ -58,23 +58,34 @@ $deleteDropDown = '<select>
         <div>
             <h4>Edit information</h4>
             <p>Select Paragraph to Edit</p>
-            <form method="post" action="admin.php">
+            <form method="POST" action="admin.php">
                 <select class="dropDown" name="editId">
-                    <?php echo $editDropDown; ?>
+                    <?php
+                    if(isset($editDropDown)){
+                        echo $editDropDown;
+                    } ?>
                 </select>
                 <input type="submit" name="chooseFromDropdown" value="Select Text">
             </form>
-            <form method="post" action="admin.php">
-                <textarea name="edit"><?php echo $oldText; ?></textarea>
-                    <?php echo $hiddenInput; ?>
+            <form method="POST" action="admin.php">
+                <textarea name="edit"><?php
+                    if(isset($oldText)){
+                        echo $oldText;
+                    } ?></textarea>
+                    <?php
+                    if(isset($hiddenInput)){
+                        echo $hiddenInput;
+                    } ?>
                 <input type="submit" value="Edit" name="editParagraph">
             </form>
         </div>
         <div>
             <h4>Delete information</h4>
             <p>Select Paragraph to Delete</p>
-            <form method="post" action="aboutMe.php">
-                <?php echo $deleteDropDown; ?>
+            <form method="POST" action="aboutMe.php">
+                <?php if(isset($deleteDropDown)){
+                    echo $deleteDropDown;
+                } ?>
                 <input type="submit" value="Delete">
             </form>
         </div>

@@ -70,6 +70,6 @@ function editParagraph(PDO $db, string $id, string $paragraph) {
  * @return string code to be called in HTML and connect to paragraph
  */
 
-function hiddenInput($editId) {
+function hiddenInput(int $editId) {
     return '<input type="hidden" name="newId" value="'.$editId.'">';
 }

@@ -37,32 +37,32 @@ class StackTest extends Testcase
         getParagraph($input);
     }
 
-    public function hiddenInputSuccess()
+    public function testhiddenInputSuccess()
     {
-        $expected = '<option value=>This is a Paragraph</option>';
-        $input = [['paragraph'=>'This is a Paragraph']];
+        $expected = '<input type="hidden" name="newId" value="3">';
+        $input = 3;
         $case = hiddenInput($input);
         $this->assertEquals($expected, $case);
     }
 
-    public function hiddenInputFailure()
+    public function testhiddenInputFailure()
     {
-        $expected = '<option value=></option>';
-        $input = [['paragraph'=>'']];
+        $expected = '<input type="hidden" name="newId" value="0">';
+        $input = 0;
         $case = hiddenInput($input);
         $this->assertEquals($expected, $case);
     }
 
-    public function hiddenInputMalformed()
+    public function testhiddenInputMalformed()
     {
-        $input = 101;
+        $input = 'This is a Paragraph';
         $this->expectException(TypeError::class);
         hiddenInput($input);
     }
 
-    public function hiddenInputMalformed2()
+    public function testhiddenInputMalformed2()
     {
-        $input = 'This is a Paragraph';
+        $input = [];
         $this->expectException(TypeError::class);
         hiddenInput($input);
     }
