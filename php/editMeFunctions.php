@@ -73,3 +73,32 @@ function editParagraph(PDO $db, string $id, string $paragraph) {
 function hiddenInput(int $editId) {
     return '<input type="hidden" name="newId" value="'.$editId.'">';
 }
+
+/*
+ * Function takes a string and returns false if it is empty and true if it has text
+ *
+ * @param string $string string to test if empty
+ *
+ * @return bool true or false if empty or not
+ */
+
+function checkIfEmpty (string $string) : bool {
+    if (empty($string)) {
+        $hasGotText = false;
+    } else {
+        $hasGotText = true;
+    }
+    return $hasGotText;
+}
+
+/*
+ * Function trims white space if present
+ *
+ * @param $string string to to be trimmed
+ *
+ * @return $string trimmed string
+ */
+
+function trimWhiteSpace (string $string) : string {
+    return trim($string);
+}
