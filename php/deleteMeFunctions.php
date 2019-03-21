@@ -7,7 +7,7 @@
  *
  * @param $deleteChoice string Links $deleteChoice to id field in database
  *
- * @return array Pulls multidimensional array from database
+ * @return bool Changes deleted column to 1 in database
  */
 function deleteAboutMe(PDO $db, string $deleteChoice) :bool {
     $query = $db->prepare("UPDATE `about_me` SET `deleted` = 1 WHERE `id` = :deleteChoice;");
