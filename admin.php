@@ -3,6 +3,7 @@
 require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
 require_once 'php/editMeFunctions.php';
+require_once 'php/deleteMeFunctions.php';
 
 $db = getDbConn();
 
@@ -29,12 +30,8 @@ if(isset($_POST['addParagraph'])){
 
 $viewAboutMe = viewAboutMe($db);
 $editDropDown = getParagraph($viewAboutMe);
+$deleteDropDown = getParagraph($viewAboutMe);
 
-$deleteDropDown = '<select>
-                    <option>Paragraph 1</option>
-                    <option>Paragraph 2</option>
-                    <option>Paragraph 3</option>
-                </select>';
 ?>
 
 <!DOCTYPE html>
@@ -86,10 +83,12 @@ $deleteDropDown = '<select>
         <div>
             <h4>Delete information</h4>
             <p>Select Paragraph to Delete</p>
-            <form method="POST" action="aboutMe.php">
+            <form method="POST" action="admin.php">
+                <select class="dropDown" name="deleteId">
                 <?php if(isset($deleteDropDown)){
                     echo $deleteDropDown;
                 } ?>
+                </select>
                 <input type="submit" value="Delete">
             </form>
         </div>
