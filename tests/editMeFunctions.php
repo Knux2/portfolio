@@ -1,6 +1,6 @@
 <?php
 
-require '../editMeFunctions.php';
+require '../php/editMeFunctions.php';
 
 use PHPUnit\Framework\Testcase;
 

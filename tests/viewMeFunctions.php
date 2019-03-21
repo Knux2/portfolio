@@ -1,6 +1,6 @@
 <?php
 
-require '../viewMeFunctions.php';
+require '../php/viewMeFunctions.php';
 
 use PHPUnit\Framework\Testcase;
 
