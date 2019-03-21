@@ -3,8 +3,13 @@
 require_once 'php/dbConnection.php';
 require_once 'php/addMeFunctions.php';
 require_once 'php/editMeFunctions.php';
+require_once 'php/deleteMeFunctions.php';
 
 $db = getDbConn();
+
+if(isset($_POST['addParagraph'])){
+    addParagraph($db, $_POST['add']);
+}
 
 if(isset($_POST['chooseFromDropdown'])){
     $editId = $_POST['editId'];
@@ -23,18 +28,15 @@ if(isset($_POST['editParagraph'])){
     }
 }
 
-if(isset($_POST['addParagraph'])){
-    addParagraph($db, $_POST['add']);
+if(isset($_POST['deleteFromDatabase'])){
+    $deleteId = $_POST['deleteId'];
+    deleteAboutMe($db, $deleteId);
 }
 
 $viewAboutMe = viewAboutMe($db);
 $editDropDown = getParagraph($viewAboutMe);
+$deleteDropDown = getParagraph($viewAboutMe);
 
-$deleteDropDown = '<select>
-                    <option>Paragraph 1</option>
-                    <option>Paragraph 2</option>
-                    <option>Paragraph 3</option>
-                </select>';
 ?>
 
 <!DOCTYPE html>
@@ -86,11 +88,13 @@ $deleteDropDown = '<select>
         <div>
             <h4>Delete information</h4>
             <p>Select Paragraph to Delete</p>
-            <form method="POST" action="aboutMe.php">
+            <form method="POST" action="admin.php">
+                <select class="dropDown" name="deleteId">
                 <?php if(isset($deleteDropDown)){
                     echo $deleteDropDown;
                 } ?>
-                <input type="submit" value="Delete">
+                </select>
+                <input type="submit" name="deleteFromDatabase" value="Delete">
             </form>
         </div>
     </section>
