@@ -7,6 +7,10 @@ require_once 'php/deleteMeFunctions.php';
 
 $db = getDbConn();
 
+if(isset($_POST['addParagraph'])){
+    addParagraph($db, $_POST['add']);
+}
+
 if(isset($_POST['chooseFromDropdown'])){
     $editId = $_POST['editId'];
     $result = getTextById($db, $editId);
@@ -24,8 +28,9 @@ if(isset($_POST['editParagraph'])){
     }
 }
 
-if(isset($_POST['addParagraph'])){
-    addParagraph($db, $_POST['add']);
+if(isset($_POST['deleteFromDatabase'])){
+    $deleteId = $_POST['deleteId'];
+    deleteAboutMe($db, $deleteId);
 }
 
 $viewAboutMe = viewAboutMe($db);
@@ -89,7 +94,7 @@ $deleteDropDown = getParagraph($viewAboutMe);
                     echo $deleteDropDown;
                 } ?>
                 </select>
-                <input type="submit" value="Delete">
+                <input type="submit" name="deleteFromDatabase" value="Delete">
             </form>
         </div>
     </section>
