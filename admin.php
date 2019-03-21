@@ -8,7 +8,12 @@ require_once 'php/deleteMeFunctions.php';
 $db = getDbConn();
 
 if(isset($_POST['addParagraph'])){
-    addParagraph($db, $_POST['add']);
+    $addParagraph = $_POST['add'];
+    $trimmedParagraph = trimWhiteSpace($addParagraph);
+    $checkIfEmpty = checkIfEmpty($trimmedParagraph);
+    if ($checkIfEmpty){
+        addParagraph($db, $_POST['add']);
+    }
 }
 
 if(isset($_POST['chooseFromDropdown'])){
