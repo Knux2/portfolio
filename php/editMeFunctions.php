@@ -7,7 +7,6 @@
  *
  * @return array Pulls multidimensional array from database
  */
-
 function viewAboutMe(PDO $db) :array {
     $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `deleted` = '0';");
     $query->execute();
@@ -21,7 +20,6 @@ function viewAboutMe(PDO $db) :array {
  *
  * @return string Paragraphs on database are displayed on portfolio page
  */
-
 function getParagraph(array $viewAboutMe) :string {
     $result = '';
     foreach($viewAboutMe as $aboutMeParagraph) {
@@ -39,7 +37,6 @@ function getParagraph(array $viewAboutMe) :string {
  *
  * @return array Retrieves single array from database
  */
-
 function getTextById(PDO $db, string $id) :array {
     $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `id` = :id;");
     $query->bindparam(':id', $id);
@@ -54,7 +51,6 @@ function getTextById(PDO $db, string $id) :array {
  *
  * @param $editParagraph string Information that will be added into database for previous entry
  */
-
 function editParagraph(PDO $db, string $id, string $paragraph) {
     $query = $db->prepare("UPDATE `about_me` SET `paragraph` = :paragraph WHERE `id` = :id;");
     $query->bindparam(':id', $id);
@@ -69,8 +65,7 @@ function editParagraph(PDO $db, string $id, string $paragraph) {
  *
  * @return string code to be called in HTML and connect to paragraph
  */
-
-function hiddenInput(int $editId) {
+function hiddenInput(int $editId) :string {
     return '<input type="hidden" name="newId" value="'.$editId.'">';
 }
 
@@ -81,7 +76,6 @@ function hiddenInput(int $editId) {
  *
  * @return bool true or false if empty or not
  */
-
 function checkIfEmpty (string $string) : bool {
     if (empty($string)) {
         $hasGotText = false;
@@ -98,7 +92,6 @@ function checkIfEmpty (string $string) : bool {
  *
  * @return $string trimmed string
  */
-
 function trimWhiteSpace (string $string) : string {
     return trim($string);
 }

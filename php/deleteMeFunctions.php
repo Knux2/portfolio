@@ -9,7 +9,6 @@
  *
  * @return array Pulls multidimensional array from database
  */
-
 function deleteAboutMe(PDO $db, string $deleteChoice) :bool {
     $query = $db->prepare("UPDATE `about_me` SET `deleted` = 1 WHERE `id` = :deleteChoice;");
     $query->bindparam(':deleteChoice', $deleteChoice);

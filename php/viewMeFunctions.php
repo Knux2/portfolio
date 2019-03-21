@@ -7,7 +7,6 @@
  *
  * @return array Pulls multidimensional array from database
  */
-
 function viewAboutMe(PDO $db) :array {
     $query = $db->prepare("SELECT `paragraph` FROM `about_me` WHERE `deleted` = '0';");
     $query->execute();
@@ -21,7 +20,6 @@ function viewAboutMe(PDO $db) :array {
  *
  * @return string Paragraphs on database are displayed on portfolio page
  */
-
 function getParagraph(array $viewAboutMe) :string {
     $result = '';
     foreach($viewAboutMe as $aboutMeParagraph) {
