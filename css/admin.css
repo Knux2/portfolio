@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+section > div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+textarea {
+    width: 50%;
+    height: 80px;
+}
+
+.dropDown {
+    width: 400px;
+}
