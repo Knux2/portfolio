@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Pulls array from database
+ * Pulls array containing paragraph and id from database
  *
- * @param $db connection to database
+ * @param $db PDO Connection to database
  *
  * @return array Pulls multidimensional array from database
  */
@@ -15,9 +15,9 @@ function viewAboutMe(PDO $db) :array {
 }
 
 /*
- * Breaks down multidimensional array into string
+ * Breaks down multidimensional array into string of valid HTML
  *
- * @param $viewAboutMe Multidimensional array pulled from database
+ * @param $viewAboutMe array Multidimensional array pulled from database
  *
  * @return string Paragraphs on database are displayed on portfolio page
  */
@@ -31,13 +31,13 @@ function getParagraph(array $viewAboutMe) :string {
 }
 
 /*
- * Pulls array from database and binds a parameter
+ * Pulls array containing paragraph and id from database and binds a parameter
  *
- * @param $db Connection to database
+ * @param $db PDO Connection to database
  *
  * @param $id string Links $id to id field in database
  *
- * @return retrieves single array from database
+ * @return array Retrieves single array from database
  */
 
 function getTextById(PDO $db, string $id) :array {
