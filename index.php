@@ -21,7 +21,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
     <div class="hero font1">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href='loginPage.php'>Admin</a></li>
                 <li><a href="#aboutMe">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contactInfo">Contact Info</a></li>
