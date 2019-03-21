@@ -9,7 +9,7 @@
  */
 
 function viewAboutMe(PDO $db) :array {
-    $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me`;");
+    $query = $db->prepare("SELECT `id`, `paragraph` FROM `about_me` WHERE `deleted` = '0';");
     $query->execute();
     return $query->fetchAll();
 }

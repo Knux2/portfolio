@@ -23,14 +23,14 @@ class StackTest extends Testcase
         $this->assertEquals($expected, $case);
     }
 
-    public function testGetParagraphMalformed()
+    public function testGetParagraphMalformedInteger()
     {
         $input = 101;
         $this->expectException(TypeError::class);
         getParagraph($input);
     }
 
-    public function testGetParagraphMalformed2()
+    public function testGetParagraphMalformedString()
     {
         $input = 'This is a Paragraph';
         $this->expectException(TypeError::class);
@@ -47,20 +47,20 @@ class StackTest extends Testcase
 
     public function testhiddenInputFailure()
     {
-        $expected = '<input type="hidden" name="newId" value="0">';
-        $input = 0;
+        $expected = '<input type="hidden" name="newId" value="123">';
+        $input = '123ABC';
         $case = hiddenInput($input);
         $this->assertEquals($expected, $case);
     }
 
-    public function testhiddenInputMalformed()
+    public function testhiddenInputMalformedString()
     {
         $input = 'This is a Paragraph';
         $this->expectException(TypeError::class);
         hiddenInput($input);
     }
 
-    public function testhiddenInputMalformed2()
+    public function testhiddenInputMalformedArray()
     {
         $input = [];
         $this->expectException(TypeError::class);
