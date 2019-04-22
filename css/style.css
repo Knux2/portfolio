@@ -18,7 +18,7 @@ a:hover {
 }
 
 .font2 {
-    font-family: SignPainter, sans-serif;
+    font-family: Futura, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
@@ -59,7 +59,7 @@ nav {
 
 .heading h1 {
     margin: 0 auto;
-    font-size: 8rem;
+    font-size: 4rem;
     color: #CC3F0C;
 }
 
@@ -76,7 +76,7 @@ nav {
     margin: 0 auto;
     color: #CC3F0C;
     text-align: center;
-    font-size: 8rem;
+    font-size: 4rem;
 }
 
 .projectBox {
@@ -135,7 +135,7 @@ nav {
 }
 
 .contactInfo {
-    font-size: 4.3rem;
+    font-size: 2rem;
     color: #CC3F0C;
     text-align: center;
 }
