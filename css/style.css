@@ -181,16 +181,15 @@ nav {
     }
 
     .heading h1 {
-        font-size: 6rem;
+        font-size: 2.5rem;
     }
 
     .heading h2 {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
 
     .portfolioTitle {
-        font-size: 6rem;
-        margin-bottom: -50px;
+        font-size: 2.5rem;
     }
 
     .projectBox {
@@ -202,7 +201,7 @@ nav {
     }
 
     .contactInfo {
-        font-size: 3.6rem;
+        font-size: 1.5rem;
     }
 
     .contactSymbols {
@@ -236,16 +235,15 @@ nav {
     }
 
     .heading h1 {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     .heading h2 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .portfolioTitle {
-        font-size: 5rem;
-        margin-bottom: -60px;
+        font-size: 2rem;
     }
 
     .projectBox {
@@ -253,7 +251,7 @@ nav {
     }
 
     .contactInfo {
-        font-size: 2.6rem;
+        font-size: 1rem;
     }
 
     .contactSymbols {
