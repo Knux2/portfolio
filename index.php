@@ -58,7 +58,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             </div>
             <div class="projectBox project3">
                 <div class="projectInfo font3">
-                    <h1>Paint App</h1>
+                    <h1>PaintMaster 3000</h1>
                     <h2>Using JavaScript to create a paint app</h2>
                     <h2><a href="https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/" target="_blank">Project Link</a></h2>
                     <h2><a href="https://github.com/Mayden-Academy/2019-paint-app" target="_blank">Github Link</a></h2>
