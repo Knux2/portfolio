@@ -106,23 +106,23 @@ nav {
 .project2 {
     background-image: url("../img/project2.png");
     background-position: center;
-    background-size: 490px;
+    background-size: cover;
 }
 
 .project3 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/paintApp.png");
     background-position: center;
     background-size: cover;
 }
 
 .project4 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/solarSystem.png");
     background-position: center;
     background-size: cover;
 }
 
 .project5 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/asyncAndAwait.png");
     background-position: center;
     background-size: cover;
 }

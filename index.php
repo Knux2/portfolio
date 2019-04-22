@@ -53,13 +53,22 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 </div>
             </div>
             <div class="projectBox project3">
-                <div class="projectInfo"></div>
+                <div class="projectInfo font3">
+                    <h1>Paint App</h1>
+                    <h2>Using JavaScript to create a paint app</h2>
+                </div>
             </div>
             <div class="projectBox project4">
-                <div class="projectInfo"></div>
+                <div class="projectInfo font3">
+                    <h1>Solar System</h1>
+                    <h2>Using SVG and CSS animations I've created a solar system</h2>
+                </div>
             </div>
             <div class="projectBox project5">
-                <div class="projectInfo"></div>
+                <div class="projectInfo font3">
+                    <h1>Async and Await</h1>
+                    <h2>Generating information on a page using an API</h2>
+                </div>
             </div>
             <div class="projectBox project6">
                 <div class="projectInfo"></div>
