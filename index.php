@@ -76,6 +76,8 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 <div class="projectInfo font3">
                     <h1>Async and Await</h1>
                     <h2>Generating information on a page using an API</h2>
+                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/asyncAndAwait/asyncAndAwait.html" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://github.com/Knux2/asyncAwaitFetch" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project6">
