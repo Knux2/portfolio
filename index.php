@@ -52,7 +52,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 <div class="projectInfo font3">
                     <h1>Pilot Shop</h1>
                     <h2>First build of a responsive website</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/PilotShop/" target="_blank">Project Link</a></h2>
                     <h2><a href="https://github.com/Knux2/pilotshop" target="_blank">Github Link</a></h2>
                 </div>
             </div>
