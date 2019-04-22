@@ -43,7 +43,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             <div class="projectBox project1">
                 <div class="projectInfo font3">
                     <h1>Mayden Logo Challenge</h1>
-                    <h2>First big exercise to make the Mayden Academy logo using just HTML and CSS</h2>
+                    <h2>First exercise to make the Mayden Academy logo using just HTML and CSS</h2>
                     <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/Logo/" target="_blank">Project Link</a></h2>
                     <h2><a href="https://github.com/Knux2/maydenLogo" target="_blank">Github Link</a></h2>
                 </div>
@@ -52,6 +52,8 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 <div class="projectInfo font3">
                     <h1>Pilot Shop</h1>
                     <h2>First build of a responsive website</h2>
+                    <h2><a href="https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://github.com/Knux2/pilotshop" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project3">
@@ -86,10 +88,10 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
     </div>
     <div class="contactSymbols">
         <ul>
-            <li><a href="https://twitter.com/Knux2"><img src="img/Twitter.svg" class="icon"/></a></li>
-            <li><a href="https://github.com/Knux2"><img src="img/Github.svg" class="icon"/></a></li>
-            <li><a href="https://instagram.com/Knux_2"><img src="img/Instagram.svg" class="icon"/></a></li>
-            <li><a href="mailto:ben_ashfield@hotmail.com"><img src="img/Email.svg" class="icon"/></a></li>
+            <li><a href="https://twitter.com/Knux2" target="_blank"><img src="img/Twitter.svg" class="icon"/></a></li>
+            <li><a href="https://github.com/Knux2" target="_blank"><img src="img/Github.svg" class="icon"/></a></li>
+            <li><a href="https://instagram.com/Knux_2" target="_blank"><img src="img/Instagram.svg" class="icon"/></a></li>
+            <li><a href="mailto:ben_ashfield@hotmail.com" target="_blank"><img src="img/Email.svg" class="icon"/></a></li>
             <li><a href="tel:07515-460416"><img src="img/Phone.svg" class="icon"/></a></li>
         </ul>
     </div>
