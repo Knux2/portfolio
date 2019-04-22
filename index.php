@@ -58,12 +58,16 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 <div class="projectInfo font3">
                     <h1>Paint App</h1>
                     <h2>Using JavaScript to create a paint app</h2>
+                    <h2><a href="https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://github.com/Mayden-Academy/2019-paint-app" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project4">
                 <div class="projectInfo font3">
                     <h1>Solar System</h1>
                     <h2>Using SVG and CSS animations I've created a solar system</h2>
+                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/solarSystem/solarSystem.html" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://github.com/Knux2/solarSystem" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project5">
