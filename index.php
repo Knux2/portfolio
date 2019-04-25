@@ -44,40 +44,40 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 <div class="projectInfo font3">
                     <h1>Mayden Logo Challenge</h1>
                     <h2>First exercise to make the Mayden Academy logo using just HTML and CSS</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/Logo/" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://github.com/Knux2/maydenLogo" target="_blank">Github Link</a></h2>
+                    <h2><a href="https://bit.ly/2vodP1g" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2voeaky" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project2">
                 <div class="projectInfo font3">
                     <h1>Pilot Shop</h1>
                     <h2>First build of a responsive website</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/PilotShop/" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://github.com/Knux2/pilotshop" target="_blank">Github Link</a></h2>
+                    <h2><a href="https://bit.ly/2GwDaLI" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2IJ5Xjz" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project3">
                 <div class="projectInfo font3">
                     <h1>PaintMaster 3000</h1>
                     <h2>Using JavaScript to create a paint app</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://github.com/Mayden-Academy/2019-paint-app" target="_blank">Github Link</a></h2>
+                    <h2><a href="https://bit.ly/2UIcmgp" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2Pu0Xjy" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project4">
                 <div class="projectInfo font3">
                     <h1>Solar System</h1>
                     <h2>Using SVG and CSS animations I've created a solar system</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/solarSystem/solarSystem.html" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://github.com/Knux2/solarSystem" target="_blank">Github Link</a></h2>
+                    <h2><a href="https://bit.ly/2KZLMzN" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2War4ys" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project5">
                 <div class="projectInfo font3">
                     <h1>Async and Await</h1>
                     <h2>Generating information on a page using an API</h2>
-                    <h2><a href="https://dev.maydenacademy.co.uk/students/2019/feb/ben/asyncAndAwait/asyncAndAwait.html" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://github.com/Knux2/asyncAwaitFetch" target="_blank">Github Link</a></h2>
+                    <h2><a href="https://bit.ly/2vnzJBO" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2ZDhlCK" target="_blank">Github Link</a></h2>
                 </div>
             </div>
             <div class="projectBox project6">
@@ -94,7 +94,6 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             <li><a href="https://github.com/Knux2" target="_blank"><img src="img/Github.svg" class="icon"/></a></li>
             <li><a href="https://instagram.com/Knux_2" target="_blank"><img src="img/Instagram.svg" class="icon"/></a></li>
             <li><a href="mailto:ben_ashfield@hotmail.com" target="_blank"><img src="img/Email.svg" class="icon"/></a></li>
-            <li><a href="tel:07515-460416"><img src="img/Phone.svg" class="icon"/></a></li>
         </ul>
     </div>
 </body>
