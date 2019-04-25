@@ -23,7 +23,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             <ul>
                 <li><a href="#aboutMe">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contactInfo">Contact Info</a></li>
+                <li><a href="#contactInfo">Contact</a></li>
             </ul>
         </nav>
         <div class="title font1">
