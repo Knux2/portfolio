@@ -42,7 +42,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             <div class="projectBox project1">
                 <div class="projectInfo font3">
                     <h1>Mayden Logo Challenge</h1>
-                    <h2>First exercise to make the Mayden Academy logo using just HTML and CSS</h2>
+                    <h2>Making Mayden Academy logo using just HTML and CSS</h2>
                     <h2><a href="https://bit.ly/2vodP1g" target="_blank">Project Link</a></h2>
                     <h2><a href="https://bit.ly/2voeaky" target="_blank">Github Link</a></h2>
                 </div>
