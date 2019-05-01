@@ -44,6 +44,8 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
 }
 
 .title {
