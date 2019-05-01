@@ -199,7 +199,7 @@ nav {
     }
 
     .projectInfo {
-        font-size: 0.9rem
+        font-size: 0.8rem
     }
 
     .contactInfo {
@@ -219,7 +219,7 @@ nav {
 
 @media screen and (max-width: 550px) {
     nav li {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -233,7 +233,7 @@ nav {
     }
 
     .title {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .heading h1 {
@@ -241,7 +241,7 @@ nav {
     }
 
     .heading h2 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .portfolioTitle {
@@ -250,6 +250,10 @@ nav {
 
     .projectBox {
         width: 100%;
+    }
+
+    .projectInfo {
+        font-size: 0.9rem
     }
 
     .contactInfo {
