@@ -80,7 +80,12 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
                 </div>
             </div>
             <div class="projectBox project6">
-                <div class="projectInfo"></div>
+                <div class="projectInfo font3">
+                    <h1>Top Dog App</h1>
+                    <h2>PHP app that hooks into a dog API</h2>
+                    <h2><a href="https://bit.ly/2VQ6uXd" target="_blank">Project Link</a></h2>
+                    <h2><a href="https://bit.ly/2VkWu95" target="_blank">Github Link</a></h2>
+                </div>
             </div>
     </div>
 
