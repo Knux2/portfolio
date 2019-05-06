@@ -92,7 +92,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             <li><a href="https://twitter.com/Knux2" target="_blank"><img src="img/Twitter.svg" class="icon"/></a></li>
             <li><a href="https://github.com/Knux2" target="_blank"><img src="img/Github.svg" class="icon"/></a></li>
             <li><a href="https://instagram.com/Knux_2" target="_blank"><img src="img/Instagram.svg" class="icon"/></a></li>
-            <li><a href="mailto:ben_ashfield@hotmail.com" target="_blank"><img src="img/Email.svg" class="icon"/></a></li>
+            <li><a href="mailto:jobs4ashfield@gmail.com" target="_blank"><img src="img/Email.svg" class="icon"/></a></li>
         </ul>
     </div>
 </body>
