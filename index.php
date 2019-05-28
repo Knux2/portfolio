@@ -95,6 +95,7 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
     <div class="contactSymbols">
         <ul>
             <li><a href="https://twitter.com/Knux2" target="_blank"><img src="img/Twitter.svg" class="icon"/></a></li>
+            <li><a href="https://www.linkedin.com/in/ben-ashfield-3a33b2186/" target="_blank"><img src="img/LinkedIn.svg" class="icon"/></a></li>
             <li><a href="https://github.com/Knux2" target="_blank"><img src="img/Github.svg" class="icon"/></a></li>
             <li><a href="https://instagram.com/Knux_2" target="_blank"><img src="img/Instagram.svg" class="icon"/></a></li>
             <li><a href="mailto:jobs4ashfield@gmail.com" target="_blank"><img src="img/Email.svg" class="icon"/></a></li>
