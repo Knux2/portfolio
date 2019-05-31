@@ -73,10 +73,10 @@ $aboutMeParagraph = getParagraph($viewAboutMe);
             </div>
             <div class="projectBox project5">
                 <div class="projectInfo font3">
-                    <h1>Async and Await</h1>
-                    <h2>Github widget to display most starred Repos</h2>
-                    <h2><a href="https://bit.ly/2vnzJBO" target="_blank">Project Link</a></h2>
-                    <h2><a href="https://bit.ly/2ZDhlCK" target="_blank">Github Link</a></h2>
+                    <h1>Bond Fight App</h1>
+                    <h2>Node API with a MongoDB database, Frontend using REACT</h2>
+                    <h2><a href="https://bit.ly/2KgDDoE" target="_blank">Github Link - REACT</a></h2>
+                    <h2><a href="https://bit.ly/2WCuRYE" target="_blank">Github Link - Node</a></h2>
                 </div>
             </div>
             <div class="projectBox project6">
