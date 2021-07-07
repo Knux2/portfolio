@@ -1,9 +1,9 @@
 <?php
 
-require_once 'php/dbConnection.php';
-require_once 'php/addMeFunctions.php';
-require_once 'php/editMeFunctions.php';
-require_once 'php/deleteMeFunctions.php';
+require_once '../php/dbConnection.php';
+require_once '../php/addMeFunctions.php';
+require_once '../php/editMeFunctions.php';
+require_once '../php/deleteMeFunctions.php';
 
 $db = getDbConn();
 
@@ -48,8 +48,8 @@ $deleteDropDown = getParagraph($viewAboutMe);
 <html lang="en">
 <head>
     <title>Bens Admin Page</title>
-    <link rel='stylesheet' type='text/css' href='css/normalise.css'>
-    <link rel='stylesheet' type='text/css' href='css/admin.css'>
+    <link rel='stylesheet' type='text/css' href='../css/normalise.css'>
+    <link rel='stylesheet' type='text/css' href='../css/admin.css'>
 </head>
 
 <body>

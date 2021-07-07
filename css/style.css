@@ -18,7 +18,7 @@ a:hover {
 }
 
 .font2 {
-    font-family: SignPainter, sans-serif;
+    font-family: Futura, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
@@ -44,6 +44,8 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
 }
 
 .title {
@@ -53,13 +55,13 @@ nav {
 }
 
 .heading {
-    font-size: 1.7rem;
+    font-size: 1rem;
     text-align: center;
 }
 
 .heading h1 {
     margin: 0 auto;
-    font-size: 8rem;
+    font-size: 4rem;
     color: #CC3F0C;
 }
 
@@ -72,17 +74,16 @@ nav {
 }
 
 .portfolioTitle {
-    height: 170px;
     margin: 0 auto;
     color: #CC3F0C;
     text-align: center;
-    font-size: 8rem;
+    font-size: 4rem;
 }
 
 .projectBox {
     float: left;
     width: 33.3%;
-    height: 250px;
+    height: 300px;
 }
 
 .projectInfo {
@@ -107,35 +108,35 @@ nav {
 .project2 {
     background-image: url("../img/project2.png");
     background-position: center;
-    background-size: 490px;
+    background-size: cover;
 }
 
 .project3 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/paintApp.png");
     background-position: center;
     background-size: cover;
 }
 
 .project4 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/solarSystem.png");
     background-position: center;
     background-size: cover;
 }
 
 .project5 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/BondFight.png");
     background-position: center;
     background-size: cover;
 }
 
 .project6 {
-    background-image: url("../img/comingSoon.png");
+    background-image: url("../img/TopDog.png");
     background-position: center;
     background-size: cover;
 }
 
 .contactInfo {
-    font-size: 4.3rem;
+    font-size: 2rem;
     color: #CC3F0C;
     text-align: center;
 }
@@ -154,7 +155,7 @@ nav {
 }
 
 .contactSymbols li {
-    display: inline-block;
+    display: inline;
 }
 
 .icon {
@@ -182,16 +183,15 @@ nav {
     }
 
     .heading h1 {
-        font-size: 6rem;
+        font-size: 2.5rem;
     }
 
     .heading h2 {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
 
     .portfolioTitle {
-        font-size: 6rem;
-        margin-bottom: -50px;
+        font-size: 2.5rem;
     }
 
     .projectBox {
@@ -199,11 +199,11 @@ nav {
     }
 
     .projectInfo {
-        font-size: 0.9rem
+        font-size: 0.8rem
     }
 
     .contactInfo {
-        font-size: 3.6rem;
+        font-size: 1.5rem;
     }
 
     .contactSymbols {
@@ -219,7 +219,7 @@ nav {
 
 @media screen and (max-width: 550px) {
     nav li {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -233,28 +233,31 @@ nav {
     }
 
     .title {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .heading h1 {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     .heading h2 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .portfolioTitle {
-        font-size: 5rem;
-        margin-bottom: -60px;
+        font-size: 2rem;
     }
 
     .projectBox {
         width: 100%;
     }
 
+    .projectInfo {
+        font-size: 0.9rem
+    }
+
     .contactInfo {
-        font-size: 2.6rem;
+        font-size: 1rem;
     }
 
     .contactSymbols {
